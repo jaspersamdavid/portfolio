@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FeatherModule } from 'angular-feather';
-import { Folder, Github, Linkedin, Instagram, Twitter, Send, ExternalLink } from 'angular-feather/icons';
+import { Folder, Github, Linkedin, Instagram, Facebook, Send, ExternalLink } from 'angular-feather/icons';
 
 const icons = {
   Github,
@@ -9,7 +9,7 @@ const icons = {
   ExternalLink,
   Linkedin,
   Instagram,
-  Twitter,
+  Facebook,
   Send,
 };
 
