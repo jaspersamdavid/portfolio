@@ -8,15 +8,8 @@
     </div>
     <div class="user-desc">
         <div *ngFor="let item of about">
-          <div [innerHTML]="item?.desc | mdToHtml"></div>
+          <div style="font-style: italic;" [innerHTML]="item?.desc | mdToHtml"></div>
         </div>
-        <br />
-        <br />
-        <ul class="skills-list" *ngFor="let item of (about); let i = index">
-          <li *ngFor="let listItem of item.skills">
-            {{listItem}}
-          </li>
-        </ul>
     </div>
   </div>
 </section>

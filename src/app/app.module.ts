@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,13 @@ export class ProjectsComponent implements OnInit {
     title:"software",
     desc:"Example",
     tech: ["Angular", "Python"]
+  },
+  {
+    liveUrl:"https//www.google.com",
+    gitUrl:"www.github.com",
+    title:"software",
+    desc:"Example",
+    tech: ["Angular", "Python"]
   }
   ]
 

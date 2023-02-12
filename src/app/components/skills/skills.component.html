@@ -1,0 +1,42 @@
+
+  <section id="skills">
+    <h2 class="title-heading">Chekout my so to say interesting Skills!!!</h2>
+    <div class="grid-row">
+      <div class="grid-item" *ngFor="let item of (skills)">
+        <div class="grid-item-wrapper">
+          <div class="project-top">
+            <div class="project-grid-inner">
+              <div class="folder">
+              </div>
+              <div class="link-box">
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>{{item}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row">
+        <div class="progrid-item" *ngFor="let item of (skillprogress)">
+          <div class="progrid-item-wrapper">
+            <div class="project-top">
+              <div class="project-grid-inner">
+                <div class="folder">
+                    <p>{{item.name}}</p>
+                </div>
+                <div class="link-box">
+                    <p>{{item.percent}}</p>
+                </div>
+              </div>
+              <div class="project-desc">
+                <div class="w3-light-grey">
+                    <div id="myBar" class="w3-container w3-grey" [style]="item.value"></div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
