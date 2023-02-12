@@ -2,7 +2,7 @@
   <div class="user-exp">
     <h2 class="title-heading">Experience</h2>
     <div class="tab-wrap">
-      <ng-container *ngFor="let item of (jobs$ | async); let i = index">
+      <ng-container *ngFor="let item of (jobs); let i = index">
         <input
           [checked]="item?.status"
           type="radio"
@@ -16,7 +16,7 @@
         }}</label>
       </ng-container>
   
-      <ng-container *ngFor="let item of (jobs$ | async); let i = index">
+      <ng-container *ngFor="let item of (jobs); let i = index">
         <div class="tab__content">
           <span class="job-title">{{item.title}} </span>
           <span class="company-name">@ {{item.company}}</span>

@@ -1,8 +1,8 @@
-import { ContentfulService } from './../../shared/services/contentful.service';
+
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import "core-js/stable";
 import "regenerator-runtime/runtime"; 
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-projects',
@@ -12,12 +12,26 @@ import { Observable } from 'rxjs';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects$: Observable<any>;
+  projects = [{
+    liveUrl:"https//www.google.com",
+    gitUrl:"www.github.com",
+    title:"software",
+    desc:"Example",
+    tech: ["Angular", "Python"]
+  },
+  {
+    liveUrl:"https//www.google.com",
+    gitUrl:"www.github.com",
+    title:"software",
+    desc:"Example",
+    tech: ["Angular", "Python"]
+  }
+  ]
 
-  constructor(private contentfulApiService: ContentfulService) { }
+  constructor() { }
 
   ngOnInit() { 
-    this.projects$ = this.contentfulApiService.getDetails('projects');
+  
   }
 
 }

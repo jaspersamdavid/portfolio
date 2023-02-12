@@ -1,8 +1,8 @@
-import { ContentfulService } from './../../shared/services/contentful.service';
+
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import "core-js/stable";
 import "regenerator-runtime/runtime"; 
-import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-experience',
@@ -12,12 +12,23 @@ import { Observable } from 'rxjs';
 })
 export class ExperienceComponent implements OnInit {
 
-  jobs$: Observable<any>;
+  jobs = [{
+    status: false,
+    company: "Tata Consultancy Services",
+    title:"Web Developer",
+    desc:`<p> joined TCS</p>`
+  },
+  {
+    status: true,
+    company: "DEVJee Inc",
+    title:"Web Developer",
+    desc:`<p> joined TCS</p>`
+  }
+];
 
-  constructor(private contentfulApiService: ContentfulService) { }
+  constructor() { }
 
   ngOnInit() { 
-    this.jobs$ = this.contentfulApiService.getDetails('jobs');
   }
 
 }

@@ -34,9 +34,9 @@ public setTimer(){
   });
 }
 
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      this.showLoader = false;
-    }, 2000)
-  }
+  // ngAfterViewInit(): void {
+  //   setTimeout(() => {
+  //     this.showLoader = false;
+  //   }, 2000)
+  // }
 }
